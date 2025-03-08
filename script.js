@@ -33,6 +33,23 @@ let header = document.querySelector('.header');
 
 header.classList.toggle('sticky', window.scrollY > 100);
 
+/*===== swiper =====*/
+
+var swiper =new Swiper(".mySwiper",{
+    slidesPerview: 1,
+    spaceBetween:20,
+    loop:true,
+    grabCursor: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl:".swiper-button-next",
+        prevEl:".swiper-button-prev",
+    },
+});
+
 menuIcon.classList.remove('bx-x');
 navbar.classList.remove('active');
 
@@ -54,6 +71,6 @@ ScrollReveal({
  });
 
  ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
- ScrollReveal().reveal('.home-img img, .portofolio-box, .contact-form', { origin: 'bottom' });
+ ScrollReveal().reveal('.home-img img, .portofolio-box, .contact-form, .skill-container, .testimonial-container', { origin: 'bottom' });
  ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });
  ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right' });

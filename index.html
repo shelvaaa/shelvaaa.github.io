@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portofolio</title>
 
+    <!--swiper css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -15,16 +18,17 @@
 <body>
     <!-- header design -->
     <header class="header">
-        <a href="" class="logo">Portofolio.</a>
+        <a href="" class="logo"><span>Shel</span>Dev.</a>
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
+            <a href="#skill">Skill</a>
             <a href="#portofolio">Portofolio</a>
+            <a href="#testimonial">Testimoni</a>
             <a href="#contact"> Contact</a>
         </nav>
 
-        <div class="bx bx-moon" id="darkMode-icon"></div>
 
         <div class="bx bx-menu" id="menu-icon"></div>
     </header>
@@ -86,13 +90,45 @@
         </div>
 
         <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
+            <h2 class="heading">WHY<span>ME</span></h2>
             <h3>Hi, Saya disini merupakan pelajar!!</h3>
             <p>Saya merupakan mahasiswa yang berkuliah di Universitas Siliwangi dengan jurusan Informatika.
                 Saya juga merupakan lulusan dari smk yang ada di Garut dengan jurusan Multimedia, Sehingga pernah magang di salah satu 
                 perusahaan yang bergerak di bidang design dengan berfokus di perlogoan .</p>
         </div>
 
+     </section>
+
+    <!--skill section design -->
+
+    
+    <section class="skill" id="skill">
+        <h2 class="heading">MY <span>SKILL</span></h2>
+
+        <div class="skill-container">
+            <div class="skill-box">
+                <h3>WEB DEPELOPMENT</h3>
+                <p>60 %</p>
+            </div>
+        </div>
+        <div class="skill-container">
+            <div class="skill-box">
+                <h3>DESIGN GRAPHIC</h3>
+                <p>60 %</p>
+            </div>
+        </div>
+        <div class="skill-container">
+            <div class="skill-box">
+                <h3>WEB DESIGN</h3>
+                <p>60 %</p>
+            </div>
+        </div>
+        <div class="skill-container">
+            <div class="skill-box">
+                <h3>PHOTOGRAPHIC</h3>
+                <p>60 %</p>
+            </div>
+        </div>
      </section>
 
      <!--portofolio section design -->
@@ -102,7 +138,7 @@
 
         <div class="portofolio-container">
             <div class="portofolio-box">
-                <img src="img/Screenshot_1.png" alt="">
+                <img src="img/webdev.jpeg" alt="">
 
                 <div class="portofolio-layer">
                     <h4>Web Develove</h4>
@@ -110,21 +146,23 @@
                 </div>
             </div>
             <div class="portofolio-box">
-                <img src="img/Home sebelum login.jpg" alt="">
+                <img src="img/webdes.jpeg" alt="">
 
                 <div class="portofolio-layer">
                     <h4>Web design</h4>
                     <a href="https://drive.google.com/drive/u/0/folders/1Mn_a-0EZvXIVBp6ysYPAPTfkf7ELnBRM"><i class='bx bx-link-external'></i></a>
                 </div>
-            </div><div class="portofolio-box">
+            </div>
+            <div class="portofolio-box">
                 <img src="img/SNF-15JULI-03.png" alt="">
 
                 <div class="portofolio-layer">
                     <h4>Design Graphic</h4>
                     <a href="https://drive.google.com/drive/u/0/folders/1Q8GYgrjM_0c0h2jgdBRzCzrSaQ78q17_"><i class='bx bx-link-external'></i></a>
                 </div>
-            </div><div class="portofolio-box">
-                <img src="img/Shelva Nur Fatimah_SMKN 2 Garut.png" alt="">
+            </div>
+            <div class="portofolio-box">
+                <img src="img/photo.jpeg" alt="">
 
                 <div class="portofolio-layer">
                     <h4>Photographic</h4>
@@ -134,6 +172,49 @@
         </div>
      </section>
 
+     <!--testimonial design-->
+     <section class="testimonial" id="testimonial">
+     <div class="testimonial-container">
+        <h2 class="heading">Valuable <span>Testimonial</span></h2>
+
+        <div class="testimonial-wrapper">
+            <div class="testimonia-box mySwiper">
+                <div class="testimonial-content swiper-wrapper">
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="img/Luffy.jpeg" alt="">
+                        <h2>Mugiwara no Luffy</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Perferendis earum aut consectetur facilis. 
+                            Amet, perferendis ex iste omnis nemo reiciendis repellat, quam deserunt 
+                            quaerat neque accusamus. Vitae minima delectus rem odio dolore, 
+                            ipsa vero blanditiis similique nemo veniam, eos fuga!</p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="img/Zoro.jpeg" alt="">
+                        <h2>Roronoa Zoro</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Perferendis earum aut consectetur facilis. 
+                            Amet, perferendis ex iste omnis nemo reiciendis repellat, quam deserunt 
+                            quaerat neque accusamus. Vitae minima delectus rem odio dolore, 
+                            ipsa vero blanditiis similique nemo veniam, eos fuga!</p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="img/Rusa.jpeg" alt="">
+                        <h2>Tony Tony Chopper </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Perferendis earum aut consectetur facilis. 
+                            Amet, perferendis ex iste omnis nemo reiciendis repellat, quam deserunt 
+                            quaerat neque accusamus. Vitae minima delectus rem odio dolore, 
+                            ipsa vero blanditiis similique nemo veniam, eos fuga!</p>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+     </div>
+    </section>
      <!--Contact section design-->
 
      <section class="contact" id="contact">
@@ -153,6 +234,8 @@
         </form>
      </section>
 
+     
+
      <!--Footer design-->
 
      <footer class="footer">
@@ -169,7 +252,8 @@
 
      <script src="https://unpkg.com/scrollreveal"></script>
 
-
+     <!--swiper js-->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- java script -->
     <script src="script.js"></script>
     
