@@ -17,7 +17,7 @@
     --main-color:#f75477;
     --white-color:#fdfdfd;
     --shadow-color:rgba(0, 0, 0, .2);
-}
+} 
 
 .dark-mode {
     --bg-color:#0b061f;
@@ -618,6 +618,7 @@ span {
     .home .home-img img {
         width:45%;
         margin-left: 8rem;
+    }
     }
 
    

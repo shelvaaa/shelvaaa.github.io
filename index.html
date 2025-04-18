@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +38,7 @@
     <!-- home section design-->
      <section class="home" id="home">
         <div class="home-content">
-            <h3>Hello yeorobunnn, saya</h3>
+            <h3>Hello GUSS, saya</h3>
             <h1>Shelva Nur Fatimah</h1>
             <p>Saya adalah Seorang Mahasiswa Dengan Jurusan Informatika di Fakultas Teknik yang ada di Universitas Siliwangi, Saya memiliki
                 ketertarikan di bidang design grafis dan juga di bidang web developer. Web ini merupakan portofolio Sayaaa
@@ -217,22 +219,22 @@
     </section>
      <!--Contact section design-->
 
-     <section class="contact" id="contact">
+     <!-- Contact Section Design -->
+    <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
-
-        <form action="#">
+        <form id="contactForm">
             <div class="input-box">
-                <input type="text" placeholder="Nama Lengkap">
-                <input type="email" placeholder="Email">
+                <input type="text" id="fullName" name="nama" placeholder="Nama Lengkap" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
             </div>
             <div class="input-box">
-                <input type="number" placeholder="No Telpon">
-                <input type="text" placeholder="Email Subject">
+                <input type="number" id="phone" name="telepon" placeholder="No Telepon" required>
+                <input type="text" id="subject" name="subject" placeholder="Email Subject" required>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Pesan"></textarea>
-            <input type="submit" value="Kirim pesan" class="btn">
+            <textarea id="message" name="pesan" cols="30" rows="10" placeholder="Pesan" required></textarea>
+            <input type="submit" value="Kirim Pesan" class="btn">
         </form>
-     </section>
+    </section>
 
      
 
@@ -256,6 +258,11 @@
      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- java script -->
     <script src="script.js"></script>
+    <!-- jQuery CDN -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <!-- File validasi kamu -->
+      <script src="script.js"></script>
+
     
 </body>
 </html>

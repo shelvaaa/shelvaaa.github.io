@@ -74,3 +74,62 @@ ScrollReveal({
  ScrollReveal().reveal('.home-img img, .portofolio-box, .contact-form, .skill-container, .testimonial-container', { origin: 'bottom' });
  ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });
  ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right' });
+
+ $(document).ready(function () {
+    $('#contactForm').on('submit', function (e) {
+      e.preventDefault(); // cegah submit default
+  
+      // Ambil nilai input
+      let name = $('#fullName').val().trim();
+      let email = $('#email').val().trim();
+      let phone = $('#phone').val().trim();
+      let subject = $('#subject').val().trim();
+      let message = $('#message').val().trim();
+  
+      // Validasi kosong
+      if (!name || !email || !phone || !subject || !message) {
+        alert('Semua formulir wajib diisi.');
+        return;
+      }
+  
+      // Validasi panjang maksimal
+      if (name.length > 50) {
+        alert('Nama maksimal 50 karakter.');
+        return;
+      }
+  
+      if (email.length > 50) {
+        alert('Email maksimal 50 karakter.');
+        return;
+      }
+  
+      if (subject.length > 100) {
+        alert('Subject maksimal 100 karakter.');
+        return;
+      }
+  
+      if (message.length > 500) {
+        alert('Pesan maksimal 500 karakter.');
+        return;
+      }
+  
+      // Validasi email
+      const emailRegex = /^\S+@\S+\.\S+$/;
+      if (!emailRegex.test(email)) {
+        alert('Format email tidak valid.');
+        return;
+      }
+  
+      // Validasi nomor telepon
+      const phoneRegex = /^[0-9]{10,15}$/;
+      if (!phoneRegex.test(phone)) {
+        alert('Nomor telepon harus 10–15 digit angka.');
+        return;
+      }
+  
+      // Jika lolos semua validasi
+      alert('Formulir berhasil dikirim!');
+      this.submit(); // Lanjut submit
+    });
+  });
+  
